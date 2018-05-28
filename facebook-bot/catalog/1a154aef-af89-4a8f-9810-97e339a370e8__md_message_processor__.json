@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "watson_output"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "messageData"
+        }
+    },
+    "id": "1a154aef-af89-4a8f-9810-97e339a370e8",
+    "version": "5.2.0.0"
+}

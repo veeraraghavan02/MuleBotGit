@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:json="http://www.mulesoft.org/schema/mule/json"
+	xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns:tls="http://www.mulesoft.org/schema/mule/tls"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    
+    
+	<flow name="webhook-flow">
+        <http:listener config-ref="HTTPS_Listener_Configuration" path="/webhook" doc:name="HTTP"/>
+        <logger message="FB: #[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="GET or POST">
+            <when expression="#[message.inboundProperties.'http.method' == 'POST']">
+                <dw:transform-message doc:name="Transform Message">
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-payload>
+                </dw:transform-message>
+                <choice doc:name="MESSAGE or POSTBACK">
+                    <when expression="#[!(payload.entry[0].messaging[0].message == null)]">
+                        <flow-ref name="WatsonConversationAPI" doc:name="Call WatsonConversationAPI Flow"/>
+                        <http:request config-ref="Call_Send_API_Request_Configuration" path="v2.6/me/messages" method="POST" doc:name="Call Facebook Send API">
+                            <http:request-builder>
+                                <http:query-param paramName="access_token" value="${access_token}"/>
+                            </http:request-builder>
+                        </http:request>
+                        <logger message="#[payload:java.lang.String]" level="INFO" doc:name="Logger"/>
+                    </when>
+                    <otherwise>
+                        <logger message="POSTBACK - #[payload]" level="INFO" doc:name="Logger"/>
+                    </otherwise>
+                </choice>
+            </when>
+            <otherwise>
+                <flow-ref name="facebook-botFlow" doc:name="call facebook-botFlow"/>
+            </otherwise>
+        </choice>
+        
+    </flow>
+    <flow name="facebook-botFlow">
+        <set-payload value="#[message.inboundProperties.'http.query.params'.['hub.challenge']]" doc:name="GET - Respond with challenge"/>
+    </flow>
+    
+    <flow name="facebook-bot-site">
+        <http:listener config-ref="HTTPS_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <set-payload value="Hello Facebook Bot!" doc:name="Set Payload"/>
+    </flow>
+</mule>

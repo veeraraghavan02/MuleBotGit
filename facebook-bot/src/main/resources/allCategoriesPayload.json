@@ -1,0 +1,22 @@
+{
+    "recipient": {
+      "id": "recipientId"
+    },
+    "message": {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "generic",
+          "elements": [{
+            "title": "rift",
+            "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+            "buttons": [{
+              "type": "postback",
+              "title": "Call Postback",
+              "payload": "Payload for first bubble"
+            }]
+          }]
+        }
+      }
+    }
+ }

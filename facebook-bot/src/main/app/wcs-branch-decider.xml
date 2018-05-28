@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <flow name="WCSBranchDecider">
+        <json:json-to-object-transformer returnClass="java.util.HashMap" doc:name="JSON to Object"/>
+        <set-variable variableName="outputText" value="#[payload.output.text[0]]" doc:name="variable - outputText"/>
+        <logger message="flowVar: #[flowVars.senderId]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="#[payload.intents[0].intent == 'allCategories']">
+                <http:request config-ref="HTTP_WCS_Configuration" path="/wcs/resources/store/{storeId}/categoryview/byParentCategory/{categoryId}" method="GET" parseResponse="false" doc:name="Call WCS Categories List Call">
+                    <http:request-builder>
+                        <http:uri-param paramName="categoryId" value="${wcs_categoryId}"/>
+                        <http:uri-param paramName="storeId" value="${wcs_storeId}"/>
+                        <http:header headerName="Content-Type" value="application/json"/>
+                    </http:request-builder>
+                    <http:success-status-code-validator values="0..599"/>
+                </http:request>
+                <logger message="jsonPayload: #[payload]" level="INFO" doc:name="Logger"/>
+                <dw:transform-message doc:name="Transform Message" metadata:id="7fa54b2d-4846-4957-8ec5-a38451d628d6">
+                    <dw:input-payload mimeType="application/json"/>
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	recipient: {
+		id: flowVars.senderId
+	},
+	message: {
+		attachment: {
+			type: "template",
+			payload: {
+				template_type: "generic",
+				elements: payload.CatalogGroupView map ((catalogGroupView , indexOfCatalogGroupView) -> {
+					title: catalogGroupView.name,
+					image_url: "http://34.194.115.169/wcsstore/aurorab2cCAS/" ++ catalogGroupView.thumbnail,
+					buttons: [{
+						type: "postback",
+						title: catalogGroupView.name,
+						payload: "SUB_CAT_" ++ catalogGroupView.uniqueID ++ catalogGroupView.name
+					}]
+				})
+			}
+		}
+	}
+}
+]]></dw:set-payload>
+                </dw:transform-message>
+            </when>
+            <when expression="#[payload.intents[0].intent == 'greetings']">
+                <dw:transform-message doc:name="Greetings Message" metadata:id="1a154aef-af89-4a8f-9810-97e339a370e8">
+                    <dw:input-payload mimeType="application/json"/>
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	recipient: {
+		id: flowVars.senderId
+	},
+	message: {
+		text: flowVars.outputText,
+		quick_replies: [{
+			"content_type": "text",
+			"title": "Login",
+			"payload": "SHOW_LOGIN_MESSAGE"
+		},{
+			"content_type": "text",
+			"title": "Register",
+			"payload": "REGISTER"
+		},{
+			"content_type": "text",
+			"title": "All Categories",
+			"payload": "ALL_CATEGORIES"
+		},{
+			"content_type": "text",
+			"title": "Search Products",
+			"payload": "SEARCH_PRODUCTS"
+		},{
+			"content_type": "text",
+			"title": "Find Deals",
+			"payload": "ALL_DEALS"
+		},{
+			"content_type": "text",
+			"title": "Change Language",
+			"payload": "CHANGE_LANGUAGE"
+		},{
+			"content_type": "text",
+			"title": "Shopping Assitant",
+			"payload": "SHOP_ASSIST"
+		},{
+			"content_type": "text",
+			"title": "Help",
+			"payload": "HELP_OPTIONS"
+		}]
+	}
+}]]></dw:set-payload>
+                </dw:transform-message>
+            </when>
+            <otherwise>
+                <dw:transform-message doc:name="Transform Message">
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	recipient: {
+		id: flowVars.senderId
+	},
+	message: {
+		text: flowVars.outputText
+	}	
+}]]></dw:set-payload>
+                </dw:transform-message>
+            </otherwise>
+        </choice>
+    </flow>
+</mule>

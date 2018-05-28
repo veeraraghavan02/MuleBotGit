@@ -1,0 +1,88 @@
+{
+    "recordSetTotal": "6",
+    "CatalogGroupView": [
+        {
+            "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byId/10014",
+            "thumbnail": "images/catalog/apparel/men/category/catr_mcl_jackets.png",
+            "productsURL": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/productview/byCategory/10014",
+            "shortDescription": "Jackets",
+            "parentCatalogGroupID": [
+                "10002"
+            ],
+            "name": "Jackets",
+            "uniqueID": "10014",
+            "identifier": "Men Jackets"
+        },
+        {
+            "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byId/10015",
+            "thumbnail": "images/catalog/apparel/men/category/catr_mcl_shirts.png",
+            "productsURL": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/productview/byCategory/10015",
+            "shortDescription": "Shirts",
+            "parentCatalogGroupID": [
+                "10002"
+            ],
+            "name": "Shirts",
+            "uniqueID": "10015",
+            "identifier": "Men Shirts"
+        },
+        {
+            "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byId/10016",
+            "thumbnail": "images/catalog/apparel/men/category/catr_mcl_suits.png",
+            "productsURL": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/productview/byCategory/10016",
+            "shortDescription": "Suits",
+            "parentCatalogGroupID": [
+                "10002"
+            ],
+            "name": "Suits",
+            "uniqueID": "10016",
+            "identifier": "Men Suits"
+        },
+        {
+            "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byId/10017",
+            "thumbnail": "images/catalog/apparel/men/category/catr_mcl_pants.png",
+            "productsURL": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/productview/byCategory/10017",
+            "shortDescription": "Pants",
+            "parentCatalogGroupID": [
+                "10002"
+            ],
+            "name": "Pants",
+            "uniqueID": "10017",
+            "identifier": "Men Pants"
+        },
+        {
+            "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byId/10018",
+            "thumbnail": "images/catalog/apparel/men/category/catr_mac_accessories.png",
+            "productsURL": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/productview/byCategory/10018",
+            "shortDescription": "Accessories",
+            "parentCatalogGroupID": [
+                "10002"
+            ],
+            "name": "Accessories",
+            "uniqueID": "10018",
+            "identifier": "Men Accessories"
+        },
+        {
+            "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byId/10019",
+            "thumbnail": "images/catalog/apparel/men/category/catr_msh_shoes.png",
+            "productsURL": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/productview/byCategory/10019",
+            "shortDescription": "Shoes",
+            "parentCatalogGroupID": [
+                "10002"
+            ],
+            "name": "Shoes",
+            "uniqueID": "10019",
+            "identifier": "Men Shoes"
+        }
+    ],
+    "resourceId": "http://EC2AMAZ-690NK44.ec2.internal/wcs/resources/lbs/store/10151/categoryview/byParentCategory/10002",
+    "recordSetCount": "6",
+    "MetaData": [
+        {
+            "metaKey": "price",
+            "metaData": "1"
+        }
+    ],
+    "recordSetComplete": "true",
+    "recordSetStartNumber": "0",
+    "resourceName": "categoryview"
+}

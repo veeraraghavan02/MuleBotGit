@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <flow name="WatsonConversationAPI">
+        <logger message="#['initial:' + payload.entry[0].messaging[0].message.text]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="senderId" value="#[payload.entry[0].messaging[0].sender.id]" doc:name="variable - SenderId of the recipient"/>
+        <expression-transformer expression="#[['input' : {&quot;text&quot;: payload.entry[0].messaging[0].message.text}, 'alternate_intents' : false]]" doc:name="Expression - body for Watson ConversationAPI"/>
+        <json:object-to-json-transformer mimeType="application/json" doc:name="Object to JSON - body to JSON format"/>
+        <http:request config-ref="HTTP_Watson_Conversation" path="/conversation/api/v1/workspaces/{workspace_id}/message" method="POST" sendBodyMode="ALWAYS" doc:name="Call Watson Conversation API">
+            <http:request-builder>
+                <http:query-param paramName="version" value="2018-02-16"/>
+                <http:uri-param paramName="workspace_id" value="${watson_conversation_workspace_id}"/>
+                <http:header headerName="Content-Type" value="application/json"/>
+            </http:request-builder>
+            <http:success-status-code-validator values="0..599"/>
+        </http:request>
+        <flow-ref name="WCSBranchDecider" doc:name="WCS Branch Decider"/>
+    </flow>
+</mule>

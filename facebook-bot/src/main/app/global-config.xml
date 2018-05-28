@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tls="http://www.mulesoft.org/schema/mule/tls"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.9.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+
+
+    <http:listener-config name="HTTPS_Listener_Configuration" protocol="HTTPS" host="0.0.0.0" port="${https.port}" doc:name="HTTP Listener Configuration">
+        <tls:context>
+            <tls:key-store type="jks" path="keystore.jks" keyPassword="testing123!" password="testing123!"/>
+        </tls:context>
+    </http:listener-config>
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="Call_Send_API_Request_Configuration" protocol="HTTPS" host="${faceook_api_host}" port="${faceook_api_port}" doc:name="HTTP Request Configuration" basePath="/">
+        <tls:context>
+            <tls:key-store type="jks" path="keystore.jks" keyPassword="testing123!" password="testing123!"/>
+        </tls:context>
+    </http:request-config>
+    <http:request-config name="HTTP_Watson_Conversation" protocol="HTTPS" host="${watson_conversation_host}" port="${watson_conversation_port}"  doc:name="HTTP Request Configuration">
+        <http:basic-authentication username="${watson_conversation_username}" password="${watson_conversation_password}"/>
+        <tls:context>
+            <tls:key-store type="jks" path="keystore.jks" keyPassword="testing123!" password="testing123!"/>
+        </tls:context>
+    </http:request-config>
+    <http:request-config name="HTTP_WCS_Configuration" protocol="HTTPS" host="${wcs_host}" port="${wcs_port}" doc:name="HTTP Request Configuration">
+        <tls:context>
+            <tls:trust-store insecure="true"/>
+            <tls:key-store type="jks" path="keystore.jks" keyPassword="testing123!" password="testing123!"/>
+        </tls:context>
+    </http:request-config>
+
+
+</mule>
