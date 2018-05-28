@@ -27,7 +27,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 payload]]></dw:set-payload>
                 </dw:transform-message>
                 <choice doc:name="MESSAGE or POSTBACK">
-                    <when expression="#[!(payload.entry[0].messaging[0].message == null)]">
+                    <when expression="#[!(payload.entry[0].messaging[0].message == null) &amp;&amp; (payload.entry[0].messaging[0].attachments == null)]">
                         <flow-ref name="WatsonConversationAPI" doc:name="Call WatsonConversationAPI Flow"/>
                         <http:request config-ref="Call_Send_API_Request_Configuration" path="v2.6/me/messages" method="POST" doc:name="Call Facebook Send API">
                             <http:request-builder>
@@ -45,6 +45,9 @@ payload]]></dw:set-payload>
                 <flow-ref name="facebook-botFlow" doc:name="call facebook-botFlow"/>
             </otherwise>
         </choice>
+        <catch-exception-strategy doc:name="Catch Exception Strategy">
+            <logger message="#[exception]" level="INFO" doc:name="Logger"/>
+        </catch-exception-strategy>
         
     </flow>
     <flow name="facebook-botFlow">

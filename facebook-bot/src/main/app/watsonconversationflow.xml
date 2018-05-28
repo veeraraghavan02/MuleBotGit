@@ -22,5 +22,8 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
             <http:success-status-code-validator values="0..599"/>
         </http:request>
         <flow-ref name="WCSBranchDecider" doc:name="WCS Branch Decider"/>
+        <catch-exception-strategy doc:name="Catch Exception Strategy">
+            <logger message="#[exception]" level="INFO" doc:name="Logger"/>
+        </catch-exception-strategy>
     </flow>
 </mule>
