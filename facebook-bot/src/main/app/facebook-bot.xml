@@ -46,7 +46,7 @@ payload]]></dw:set-payload>
             </otherwise>
         </choice>
         <catch-exception-strategy doc:name="Catch Exception Strategy">
-            <logger message="#[exception]" level="INFO" doc:name="Logger"/>
+            <logger message="gopal :: #[exception.causedBy]" level="INFO" doc:name="Logger"/>
         </catch-exception-strategy>
         
     </flow>

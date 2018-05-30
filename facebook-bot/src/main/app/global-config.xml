@@ -35,5 +35,7 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
         </tls:context>
     </http:request-config>
 
+    <http:request-config name="WCS_Search_HTTP_Request_Configuration" host="${wcs_host}" port="${wcs_search_port}" doc:name="HTTP Request Configuration">
+    </http:request-config>
 
 </mule>

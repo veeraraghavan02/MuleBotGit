@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+
     <flow name="WCSBranchDecider">
         <json:json-to-object-transformer returnClass="java.util.HashMap" doc:name="JSON to Object"/>
         <set-variable variableName="outputText" value="#[payload.output.text[0]]" doc:name="variable - outputText"/>
@@ -23,7 +24,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                     </http:request-builder>
                     <http:success-status-code-validator values="0..599"/>
                 </http:request>
-                <logger message="jsonPayload: #[payload]" level="INFO" doc:name="Logger"/>
+                <logger message="#[payload:java.lang.String]" level="INFO" doc:name="Logger"/>
                 <dw:transform-message doc:name="Transform Message" metadata:id="7fa54b2d-4846-4957-8ec5-a38451d628d6">
                     <dw:input-payload mimeType="application/json"/>
                     <dw:set-payload><![CDATA[%dw 1.0
@@ -43,8 +44,8 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 					image_url: "http://34.194.115.169/wcsstore/aurorab2cCAS/" ++ catalogGroupView.thumbnail,
 					buttons: [{
 						type: "postback",
-						title: catalogGroupView.name,
-						payload: "SUB_CAT_" ++ catalogGroupView.uniqueID ++ catalogGroupView.name
+						title: "Browse " ++ catalogGroupView.name,
+						payload: "SUB_CAT_" ++ catalogGroupView.uniqueID ++ "_" ++ catalogGroupView.name
 					}]
 				})
 			}
@@ -53,6 +54,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 }
 ]]></dw:set-payload>
                 </dw:transform-message>
+                <logger message="#[payload]" level="INFO" doc:name="Logger"/>
             </when>
             <when expression="#[payload.intents[0].intent == 'greetings']">
                 <dw:transform-message doc:name="Greetings Message" metadata:id="1a154aef-af89-4a8f-9810-97e339a370e8">
@@ -99,6 +101,44 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 			"title": "Help",
 			"payload": "HELP_OPTIONS"
 		}]
+	}
+}]]></dw:set-payload>
+                </dw:transform-message>
+            </when>
+            <when expression="#[payload.intents[0].intent == 'search']">
+                <http:request config-ref="WCS_Search_HTTP_Request_Configuration" path="/search/resources/store/{storeId}/productview/bySearchTerm/{searchTerm}?pageNumber=1" parseResponse="false" method="GET" doc:name="WCS_Search_HTTP_Request">
+                    <http:request-builder>
+                        <http:uri-param paramName="storeId" value="${wcs_storeId}"/>
+                        <http:uri-param paramName="searchTerm" value="#[payload.entities[0].value]"/>
+                        <http:header headerName="Content-Type" value="application/json"/>
+                    </http:request-builder>
+                    <http:success-status-code-validator values="0..599"/>
+                </http:request>
+                <logger message="#[payload:java.lang.String]" level="INFO" doc:name="Logger"/>
+                <dw:transform-message doc:name="Transform Message" metadata:id="be04bd4c-dea4-428a-9eff-0337ad3c19ec">
+                    <dw:input-payload mimeType="application/json"/>
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	recipient: {
+		id: flowVars.senderId
+	},
+	message: {
+		attachment: {
+			type: "template",
+			payload: {
+				template_type: "generic",
+				elements: payload.catalogEntryView map ((catalogEntryView , indexOfCatalogEntryView) -> {
+					title: "gopal",
+					buttons: [{
+						type: "postback",
+						title: "Show more colors",
+						payload: "GET_SKU_LIST_10001_" ++ indexOfCatalogEntryView
+					}]
+				})
+			}
+		}
 	}
 }]]></dw:set-payload>
                 </dw:transform-message>
