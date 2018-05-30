@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "productViewByCategory"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "productViewByCategoryPayload"
+        }
+    },
+    "id": "2f5c1102-b24b-402f-adbc-17de806d5031",
+    "version": "5.2.0.0"
+}
