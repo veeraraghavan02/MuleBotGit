@@ -15,7 +15,7 @@
     <metaDataModelPropertiesManager>
       <properties>
         <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty>
-          <exampleContent>/Users/gopalas/MuleBotGit/facebook-bot/src/main/resources/productViewByCategoryPayload.json</exampleContent>
+          <exampleContent>/Users/veeraraghavanr/MuleBotGit/facebook-bot/src/main/resources/productViewByCategoryPayload.json</exampleContent>
         </org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty>
         <org.mule.tooling.metadata.properties.DefinitionEditorModeType>
           <mode>EXAMPLE</mode>
@@ -119,34 +119,6 @@
                     </metaDataFieldPropertyManager>
                   </org.mule.common.metadata.DefaultMetaDataField>
                   <org.mule.common.metadata.DefaultMetaDataField>
-                    <name>image_aspect_ratio</name>
-                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
-                      <dataType>STRING</dataType>
-                      <metaDataModelPropertiesManager>
-                        <properties/>
-                      </metaDataModelPropertiesManager>
-                    </model>
-                    <accessType>READ_WRITE</accessType>
-                    <metaDataFieldPropertyManager>
-                      <properties>
-                        <org.mule.common.metadata.field.property.dsql.DsqlSelectMetaDataFieldProperty/>
-                        <org.mule.common.metadata.field.property.dsql.DsqlWhereMetaDataFieldProperty/>
-                        <org.mule.common.metadata.field.property.dsql.DsqlOrderMetaDataFieldProperty/>
-                        <org.mule.common.metadata.field.property.dsql.DsqlQueryOperatorsMetaDataFieldProperty>
-                          <supportedOperators>
-                            <org.mule.common.query.expression.LessOperator/>
-                            <org.mule.common.query.expression.LessOrEqualsOperator/>
-                            <org.mule.common.query.expression.EqualsOperator/>
-                            <org.mule.common.query.expression.GreaterOperator/>
-                            <org.mule.common.query.expression.GreaterOrEqualsOperator/>
-                            <org.mule.common.query.expression.NotEqualsOperator/>
-                            <org.mule.common.query.expression.LikeOperator/>
-                          </supportedOperators>
-                        </org.mule.common.metadata.field.property.dsql.DsqlQueryOperatorsMetaDataFieldProperty>
-                      </properties>
-                    </metaDataFieldPropertyManager>
-                  </org.mule.common.metadata.DefaultMetaDataField>
-                  <org.mule.common.metadata.DefaultMetaDataField>
                     <name>payload</name>
                     <model class="org.mule.common.metadata.DefaultStructuredMetadataModel">
                       <dataType>JSON</dataType>
@@ -156,6 +128,34 @@
                       <fields>
                         <org.mule.common.metadata.DefaultMetaDataField>
                           <name>template_type</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties/>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.field.property.dsql.DsqlSelectMetaDataFieldProperty/>
+                              <org.mule.common.metadata.field.property.dsql.DsqlWhereMetaDataFieldProperty/>
+                              <org.mule.common.metadata.field.property.dsql.DsqlOrderMetaDataFieldProperty/>
+                              <org.mule.common.metadata.field.property.dsql.DsqlQueryOperatorsMetaDataFieldProperty>
+                                <supportedOperators>
+                                  <org.mule.common.query.expression.LessOperator/>
+                                  <org.mule.common.query.expression.LessOrEqualsOperator/>
+                                  <org.mule.common.query.expression.EqualsOperator/>
+                                  <org.mule.common.query.expression.GreaterOperator/>
+                                  <org.mule.common.query.expression.GreaterOrEqualsOperator/>
+                                  <org.mule.common.query.expression.NotEqualsOperator/>
+                                  <org.mule.common.query.expression.LikeOperator/>
+                                </supportedOperators>
+                              </org.mule.common.metadata.field.property.dsql.DsqlQueryOperatorsMetaDataFieldProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>image_aspect_ratio</name>
                           <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
                             <dataType>STRING</dataType>
                             <metaDataModelPropertiesManager>
@@ -349,7 +349,7 @@
                                           </metaDataFieldPropertyManager>
                                         </org.mule.common.metadata.DefaultMetaDataField>
                                         <org.mule.common.metadata.DefaultMetaDataField>
-                                          <name>title</name>
+                                          <name>payload</name>
                                           <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
                                             <dataType>STRING</dataType>
                                             <metaDataModelPropertiesManager>
@@ -377,7 +377,7 @@
                                           </metaDataFieldPropertyManager>
                                         </org.mule.common.metadata.DefaultMetaDataField>
                                         <org.mule.common.metadata.DefaultMetaDataField>
-                                          <name>payload</name>
+                                          <name>title</name>
                                           <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
                                             <dataType>STRING</dataType>
                                             <metaDataModelPropertiesManager>

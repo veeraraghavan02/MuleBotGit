@@ -29,24 +29,28 @@ payload]]></dw:set-payload>
                 <choice doc:name="MESSAGE or POSTBACK">
                     <when expression="#[!(payload.entry[0].messaging[0].message == null) &amp;&amp; (payload.entry[0].messaging[0].attachments == null)]">
                         <flow-ref name="WatsonConversationAPI" doc:name="Call WatsonConversationAPI Flow"/>
-                        <http:request config-ref="Call_Send_API_Request_Configuration" path="v2.6/me/messages" method="POST" doc:name="Call Facebook Send API">
-                            <http:request-builder>
-                                <http:query-param paramName="access_token" value="${access_token}"/>
-                            </http:request-builder>
-                        </http:request>
-                        <logger message="#[payload:java.lang.String]" level="INFO" doc:name="Logger"/>
+                    </when>
+                    <when expression="#[payload.entry[0].messaging[0].postback != null]">
+                        <flow-ref name="wcs-postback-deciderFlow" doc:name="wcs-postback-deciderFlow"/>
                     </when>
                     <otherwise>
                         <logger message="POSTBACK - #[payload]" level="INFO" doc:name="Logger"/>
                     </otherwise>
                 </choice>
+                <http:request config-ref="Call_Send_API_Request_Configuration" path="v2.6/me/messages" method="POST" doc:name="Call Facebook Send API">
+                    <http:request-builder>
+                        <http:query-param paramName="access_token" value="${access_token}"/>
+                    </http:request-builder>
+                    <http:success-status-code-validator values="0..599"/>
+                </http:request>
+                <logger message="#[payload:java.lang.String]" level="INFO" doc:name="Logger"/>
             </when>
             <otherwise>
                 <flow-ref name="facebook-botFlow" doc:name="call facebook-botFlow"/>
             </otherwise>
         </choice>
         <catch-exception-strategy doc:name="Catch Exception Strategy">
-            <logger message="gopal :: #[exception.causedBy]" level="INFO" doc:name="Logger"/>
+            <logger message="Default Exception :: #[exception]" level="INFO" doc:name="Logger"/>
         </catch-exception-strategy>
         
     </flow>

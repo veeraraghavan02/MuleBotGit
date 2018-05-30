@@ -106,7 +106,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                 </dw:transform-message>
             </when>
             <when expression="#[payload.intents[0].intent == 'search']">
-                <http:request config-ref="WCS_Search_HTTP_Request_Configuration" path="/search/resources/store/{storeId}/productview/bySearchTerm/{searchTerm}?pageNumber=1" parseResponse="false" method="GET" doc:name="WCS_Search_HTTP_Request">
+                <http:request config-ref="WCS_Search_HTTP_Request_Configuration" path="/search/resources/store/{storeId}/productview/bySearchTerm/{searchTerm}?pageNumber=1&amp;pageSize=5" parseResponse="false" method="GET" doc:name="WCS_Search_HTTP_Request">
                     <http:request-builder>
                         <http:uri-param paramName="storeId" value="${wcs_storeId}"/>
                         <http:uri-param paramName="searchTerm" value="#[payload.entities[0].value]"/>
@@ -121,27 +121,82 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 %output application/json
 ---
 {
-	recipient: {
-		id: flowVars.senderId
-	},
-	message: {
-		attachment: {
-			type: "template",
-			payload: {
-				template_type: "generic",
-				elements: payload.catalogEntryView map ((catalogEntryView , indexOfCatalogEntryView) -> {
-					title: "gopal",
-					buttons: [{
-						type: "postback",
-						title: "Show more colors",
-						payload: "GET_SKU_LIST_10001_" ++ indexOfCatalogEntryView
-					}]
-				})
-			}
-		}
-	}
+  "recipient": {
+    "id": flowVars.senderId
+  },
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Versatil Montana Suede Jacket",
+            "image_url": "http://34.194.115.169/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0915.jpg",
+            "subtitle": "Comfortable and casual zip-front jacket with slit pockets",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Show more colors",
+                "payload": "GET_SKU_LIST_11520"
+              }
+            ]
+          },
+          {
+            "title": "Luigi Valenti Casual Leather Jacket",
+            "image_url": "http://34.194.115.169/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0904.jpg",
+            "subtitle": "Snap-collared three-season bomber jacket",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Show more colors",
+                "payload": "GET_SKU_LIST_11457"
+              }
+            ]
+          },
+          {
+            "title": "Gusso Diablo Racing Jacket",
+            "image_url": "http://34.194.115.169/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0905.jpg",
+            "subtitle": "Fitted snap-front leather racing jacket with shoulder detail",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Show more colors",
+                "payload": "GET_SKU_LIST_11464"
+              }
+            ]
+          },
+          {
+            "title": "Albini Black Leather Aviator",
+            "image_url": "http://34.194.115.169/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0906.jpg",
+            "subtitle": "The classic aviator jacket is back in black",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Show more colors",
+                "payload": "GET_SKU_LIST_11471"
+              }
+            ]
+          },
+          {
+            "title": "Albini Urban Dweller Jacket",
+            "image_url": "http://34.194.115.169/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0914.jpg",
+            "subtitle": "Military-inspired jacket with a mandarin collar",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Show more colors",
+                "payload": "GET_SKU_LIST_11513"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
 }]]></dw:set-payload>
                 </dw:transform-message>
+                <logger message="productViewPayload: #[payload]" level="INFO" doc:name="Logger"/>
             </when>
             <otherwise>
                 <dw:transform-message doc:name="Transform Message">
