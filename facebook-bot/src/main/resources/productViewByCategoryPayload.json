@@ -1,0 +1,25 @@
+{
+    "recipient": {
+      "id": "recipientId"
+    },
+    "message": {
+      "attachment": {
+        "type": "template",
+        "image_aspect_ratio": "square",
+        "payload": {
+          "template_type": "generic",
+          "elements": [{
+            "title": "rift",
+            "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+            "item_url": "http://messengerdemo.parseapp.com/img/rift.png",
+             "subtitle" : "",
+            "buttons": [{
+              "type": "postback",
+              "title": "Call Postback",
+              "payload": "sample payload for product view by category"
+            }]
+          }]
+        }
+      }
+    }
+ }

@@ -1,0 +1,2250 @@
+{
+    "recordSetTotal": 15,
+    "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/bySearchTerm/jackets?pageNumber=1",
+    "recordSetCount": 15,
+    "facetView": [
+        {
+            "extendedData": {
+                "displaySequence": "0.0",
+                "srchattridentifier": "_cat.ManufacturerName",
+                "group_id": "0",
+                "allValuesReturned": true,
+                "max_display": "20",
+                "maximumValuesToDisplay": "20",
+                "propertyvalue": "mfName_ntk_cs",
+                "zero_display": "0",
+                "storeent_id": "0",
+                "displayable": "1",
+                "srchattr_id": "-1002",
+                "selection": "0",
+                "facet_id": "-1000",
+                "groupId": "0",
+                "sortorder": "0",
+                "fdesc": "The manufacturer",
+                "propertyname": "facet",
+                "keyword_search": "1",
+                "fname": "Brand",
+                "allowMultipleValueSelection": "false"
+            },
+            "name": "ManufacturerName",
+            "entry": [
+                {
+                    "extendedData": {
+                        "uniqueId": "-10027210111410910511697103101326711110810810199116105111110"
+                    },
+                    "count": "4",
+                    "value": "mfName_ntk_cs%3A%22Hermitage+Collection%22",
+                    "label": "Hermitage Collection"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "-10026510898105110105"
+                    },
+                    "count": "3",
+                    "value": "mfName_ntk_cs%3A%22Albini%22",
+                    "label": "Albini"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "-100276117105103105328697108101110116105"
+                    },
+                    "count": "3",
+                    "value": "mfName_ntk_cs%3A%22Luigi+Valenti%22",
+                    "label": "Luigi Valenti"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "-10028610111411597116105108"
+                    },
+                    "count": "3",
+                    "value": "mfName_ntk_cs%3A%22Versatil%22",
+                    "label": "Versatil"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "-100271117115115111"
+                    },
+                    "count": "2",
+                    "value": "mfName_ntk_cs%3A%22Gusso%22",
+                    "label": "Gusso"
+                }
+            ],
+            "value": "mfName_ntk_cs"
+        },
+        {
+            "extendedData": {
+                "displaySequence": "0.0",
+                "srchattridentifier": "_cat.ParentCatalogGroup",
+                "group_id": "0",
+                "allValuesReturned": true,
+                "max_display": "20",
+                "maximumValuesToDisplay": "20",
+                "propertyvalue": "parentCatgroup_id_search",
+                "zero_display": "0",
+                "storeent_id": "0",
+                "displayable": "1",
+                "srchattr_id": "-1013",
+                "selection": "0",
+                "facet_id": "-1001",
+                "groupId": "0",
+                "sortorder": "0",
+                "fdesc": "The category",
+                "propertyname": "facet",
+                "keyword_search": "1",
+                "fname": "Category",
+                "allowMultipleValueSelection": "false"
+            },
+            "name": "ParentCatalogGroup",
+            "entry": [
+                {
+                    "extendedData": {
+                        "uniqueId": "10001"
+                    },
+                    "count": "15",
+                    "value": "10001",
+                    "label": "Apparel"
+                },
+                {
+                    "extendedData": {
+                        "parentIds": "10001",
+                        "uniqueId": "10002"
+                    },
+                    "count": "15",
+                    "value": "10002",
+                    "label": "Men"
+                },
+                {
+                    "extendedData": {
+                        "parentIds": "10001_10002",
+                        "uniqueId": "10014"
+                    },
+                    "count": "15",
+                    "value": "10014",
+                    "label": "Jackets"
+                }
+            ],
+            "value": "parentCatgroup_id_search"
+        },
+        {
+            "entry": [
+                {
+                    "extendedData": {
+                        "uniqueId": "1121141059910195858368584012342324948481253249484841"
+                    },
+                    "count": 3,
+                    "value": "price_USD%3A%28%7B*+100%7D+100%29",
+                    "label": "({* 100} 100)"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "11211410599101958583685840123494848325048481253250484841"
+                    },
+                    "count": 4,
+                    "value": "price_USD%3A%28%7B100+200%7D+200%29",
+                    "label": "({100 200} 200)"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "11211410599101958583685840123504848325148481253251484841"
+                    },
+                    "count": 5,
+                    "value": "price_USD%3A%28%7B200+300%7D+300%29",
+                    "label": "({200 300} 300)"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "11211410599101958583685840123514848325248481253252484841"
+                    },
+                    "count": 3,
+                    "value": "price_USD%3A%28%7B300+400%7D+400%29",
+                    "label": "({300 400} 400)"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "11211410599101958583685840123524848325348481253253484841"
+                    },
+                    "count": 0,
+                    "value": "price_USD%3A%28%7B400+500%7D+500%29",
+                    "label": "({400 500} 500)"
+                },
+                {
+                    "extendedData": {
+                        "uniqueId": "11211410599101958583685840123534848324212541"
+                    },
+                    "count": 0,
+                    "value": "price_USD%3A%28%7B500+*%7D%29",
+                    "label": "({500 *})"
+                }
+            ],
+            "name": "OfferPrice_USD",
+            "value": "price_USD"
+        },
+        {
+            "extendedData": {
+                "attr_id": "7000000000000000037",
+                "displaySequence": "0.0",
+                "attrsequence": "0.0",
+                "srchattridentifier": "_cat.MenJacketsSize",
+                "group_id": "0",
+                "allValuesReturned": true,
+                "max_display": "-1",
+                "maximumValuesToDisplay": "-1",
+                "propertyvalue": "ads_f10023_ntk_cs",
+                "zero_display": "0",
+                "displayable": "1",
+                "storeent_id": "10051",
+                "srchattr_id": "-7000000000000000037",
+                "attrdesc": "Size",
+                "attrname": "Size",
+                "selection": "0",
+                "facet_id": "10025",
+                "groupId": "0",
+                "sortorder": "0",
+                "attridentifier": "MenJacketsSize",
+                "propertyname": "facet",
+                "keyword_search": "1",
+                "allowMultipleValueSelection": "false"
+            },
+            "name": "Size",
+            "entry": [
+                {
+                    "extendedData": {
+                        "sequence": "4.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-700000000000000003776"
+                    },
+                    "count": "15",
+                    "value": "ads_f10023_ntk_cs%3A%22L%22",
+                    "label": "L"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "3.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-700000000000000003777"
+                    },
+                    "count": "15",
+                    "value": "ads_f10023_ntk_cs%3A%22M%22",
+                    "label": "M"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "2.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-700000000000000003783"
+                    },
+                    "count": "15",
+                    "value": "ads_f10023_ntk_cs%3A%22S%22",
+                    "label": "S"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "5.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-70000000000000000378876"
+                    },
+                    "count": "15",
+                    "value": "ads_f10023_ntk_cs%3A%22XL%22",
+                    "label": "XL"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "1.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-70000000000000000378883"
+                    },
+                    "count": "15",
+                    "value": "ads_f10023_ntk_cs%3A%22XS%22",
+                    "label": "XS"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "6.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-7000000000000000037888876"
+                    },
+                    "count": "15",
+                    "value": "ads_f10023_ntk_cs%3A%22XXL%22",
+                    "label": "XXL"
+                }
+            ],
+            "value": "ads_f10023_ntk_cs"
+        },
+        {
+            "extendedData": {
+                "attr_id": "7000000000000000036",
+                "displaySequence": "0.0",
+                "attrsequence": "0.0",
+                "srchattridentifier": "_cat.MenJacketsColor",
+                "group_id": "0",
+                "allValuesReturned": true,
+                "max_display": "-1",
+                "maximumValuesToDisplay": "-1",
+                "propertyvalue": "ads_f10024_ntk_cs",
+                "zero_display": "0",
+                "displayable": "1",
+                "storeent_id": "10051",
+                "srchattr_id": "-7000000000000000036",
+                "attrdesc": "Color",
+                "attrname": "Color",
+                "selection": "0",
+                "facet_id": "10026",
+                "groupId": "0",
+                "sortorder": "0",
+                "attridentifier": "MenJacketsColor",
+                "propertyname": "facet",
+                "keyword_search": "1",
+                "allowMultipleValueSelection": "false"
+            },
+            "name": "Color",
+            "entry": [
+                {
+                    "extendedData": {
+                        "sequence": "3.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-7000000000000000036661089799107"
+                    },
+                    "count": "6",
+                    "value": "ads_f10024_ntk_cs%3A%22Black%22",
+                    "label": "Black"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "2.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-70000000000000000368497110"
+                    },
+                    "count": "3",
+                    "value": "ads_f10024_ntk_cs%3A%22Tan%22",
+                    "label": "Tan"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "5.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-70000000000000000367111497121"
+                    },
+                    "count": "2",
+                    "value": "ads_f10024_ntk_cs%3A%22Gray%22",
+                    "label": "Gray"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "6.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-700000000000000003666114111119110"
+                    },
+                    "count": "1",
+                    "value": "ads_f10024_ntk_cs%3A%22Brown%22",
+                    "label": "Brown"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "4.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-70000000000000000366711410197109"
+                    },
+                    "count": "1",
+                    "value": "ads_f10024_ntk_cs%3A%22Cream%22",
+                    "label": "Cream"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "7.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-7000000000000000036761051031041163298114111119110"
+                    },
+                    "count": "1",
+                    "value": "ads_f10024_ntk_cs%3A%22Light+brown%22",
+                    "label": "Light brown"
+                },
+                {
+                    "extendedData": {
+                        "sequence": "1.0",
+                        "unitOfMeasure": "one",
+                        "unitID": "C62",
+                        "uniqueId": "-70000000000000000368497117112101"
+                    },
+                    "count": "1",
+                    "value": "ads_f10024_ntk_cs%3A%22Taupe%22",
+                    "label": "Taupe"
+                }
+            ],
+            "value": "ads_f10024_ntk_cs"
+        }
+    ],
+    "catalogEntryGroupView": {},
+    "catalogEntryView": [
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11520",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11520",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11520",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "229.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "229.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0915.jpg",
+            "shortDescription": "Comfortable and casual zip-front jacket with slit pockets",
+            "manufacturer": "Versatil",
+            "name": "Versatil Montana Suede Jacket",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000702",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0915"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "4.00000",
+                            "value": "Suede",
+                            "uniqueID": "7000000000000000691",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0915"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0915"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11534",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11534",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11534",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "97.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "97.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0917.jpg",
+            "shortDescription": "Fitted black jacket with breast pockets and epaulettes",
+            "manufacturer": "Hermitage Collection",
+            "name": "Hermitage Porter Coat",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Business",
+                            "uniqueID": "7000000000000000709",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0917"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "6.00000",
+                            "value": "Cotton/wool",
+                            "uniqueID": "7000000000000000693",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0917"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0917"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11541",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11541",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11541",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "330.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "315.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0919.jpg",
+            "shortDescription": "Waist-length soft leather jacket with pockets",
+            "manufacturer": "Luigi Valenti",
+            "name": "Luigi Valenti Black Leather Short Coat",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000704",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0919"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Leather",
+                            "uniqueID": "7000000000000000689",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0919"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0919"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11492",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11492",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11492",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "199.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "199.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0909.jpg",
+            "shortDescription": "Chocolate leather jacket with buckled epaulettes",
+            "manufacturer": "Hermitage Collection",
+            "name": "Hermitage Ribbed Collar Leather Bomber",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000699",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0909"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Leather",
+                            "uniqueID": "7000000000000000687",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0909"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0909"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11471",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11471",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11471",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "335.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "310.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0906.jpg",
+            "shortDescription": "The classic aviator jacket is back in black",
+            "manufacturer": "Albini",
+            "name": "Albini Black Leather Aviator",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000698",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0906"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Leather",
+                            "uniqueID": "7000000000000000686",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0906"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0906"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11527",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11527",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11527",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "199.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "199.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0916.jpg",
+            "shortDescription": "Casual two-button tan sport coat",
+            "manufacturer": "Albini",
+            "name": "Albini Cashmere Sport Coat",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000703",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0916"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "5.00000",
+                            "value": "Wool/cashmere",
+                            "uniqueID": "7000000000000000692",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0916"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0916"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11450",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11450",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11450",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "175.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "175.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0901.jpg",
+            "shortDescription": "Waist-length wool coat with stylish double collar",
+            "manufacturer": "Hermitage Collection",
+            "name": "Hermitage Collection Double-Breasted Pea Coat",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000695",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0901"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Wool",
+                            "uniqueID": "7000000000000000680",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0901"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0901"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11548",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11548",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11548",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "390.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "375.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0920.jpg",
+            "shortDescription": "An ultra-warm winter jacket with a fur-lined hood",
+            "manufacturer": "Hermitage Collection",
+            "name": "Hermitage Tweed Bomber",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000705",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0920"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "7.00000",
+                            "value": "Tweed",
+                            "uniqueID": "7000000000000000694",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0920"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0920"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11499",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11499",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11499",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "290.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "290.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0910.jpg",
+            "shortDescription": "Timeless and casual leather aviator",
+            "manufacturer": "Luigi Valenti",
+            "name": "Luigi Valenti Classic Aviator",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000700",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0910"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Leather",
+                            "uniqueID": "7000000000000000688",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0910"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0910"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11478",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11478",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11478",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "70.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "70.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0907.jpg",
+            "shortDescription": "Double-breasted short trench with belt",
+            "manufacturer": "Versatil",
+            "name": "Versatil Belted Cotton Trench",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Business",
+                            "uniqueID": "7000000000000000706",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0907"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "3.00000",
+                            "value": "Cotton",
+                            "uniqueID": "7000000000000000690",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0907"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0907"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11506",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11506",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11506",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "260.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "260.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0913.jpg",
+            "shortDescription": "Two-button blazer with flap pockets",
+            "manufacturer": "Gusso",
+            "name": "Gusso Flannel Blazer",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000701",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0913"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Wool",
+                            "uniqueID": "7000000000000000682",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0913"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0913"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11457",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11457",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11457",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "225.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "205.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0904.jpg",
+            "shortDescription": "Snap-collared three-season bomber jacket",
+            "manufacturer": "Luigi Valenti",
+            "name": "Luigi Valenti Casual Leather Jacket",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000696",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0904"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Leather",
+                            "uniqueID": "7000000000000000684",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0904"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": true,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Clearance",
+                            "uniqueID": "7000000000000002926",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "Clearance"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Clearance",
+                    "uniqueID": "7000000000000000178",
+                    "usage": "Descriptive",
+                    "comparable": false,
+                    "displayable": true,
+                    "identifier": "Clearance",
+                    "facetable": false,
+                    "searchable": false
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0904"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11464",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11464",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11464",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "270.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "255.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0905.jpg",
+            "shortDescription": "Fitted snap-front leather racing jacket with shoulder detail",
+            "manufacturer": "Gusso",
+            "name": "Gusso Diablo Racing Jacket",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Casual",
+                            "uniqueID": "7000000000000000697",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0905"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Leather",
+                            "uniqueID": "7000000000000000685",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0905"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0905"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11485",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11485",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11485",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "169.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "169.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0908.jpg",
+            "shortDescription": "Elegant double-breasted pea coat with double front pockets",
+            "manufacturer": "Versatil",
+            "name": "Versatil Mufasa Pea Coat",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Business",
+                            "uniqueID": "7000000000000000707",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0908"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Wool",
+                            "uniqueID": "7000000000000000681",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0908"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0908"
+        },
+        {
+            "hasSingleSKU": false,
+            "grouping_parentCatentry_id": "11513",
+            "catalogEntryTypeCode": "ProductBean",
+            "parentCatalogGroupID": [
+                "10001_10014",
+                "10052_10014"
+            ],
+            "uniqueID": "11513",
+            "resourceId": "http://34.194.115.169:3737/search/resources/store/10151/productview/byId/11513",
+            "price": [
+                {
+                    "description": "L",
+                    "value": "89.0",
+                    "usage": "Display",
+                    "currency": "USD"
+                },
+                {
+                    "description": "I",
+                    "value": "89.0",
+                    "usage": "Offer",
+                    "currency": "USD"
+                }
+            ],
+            "thumbnail": "/wcsstore/aurorab2cCAS/images/catalog/apparel/men/mcl009_jackets/200x310/mcl009_0914.jpg",
+            "shortDescription": "Military-inspired jacket with a mandarin collar",
+            "manufacturer": "Albini",
+            "name": "Albini Urban Dweller Jacket",
+            "buyable": "true",
+            "attributes": [
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "2.00000",
+                            "value": "Business",
+                            "uniqueID": "7000000000000000708",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0914"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Style",
+                    "uniqueID": "7000000000000000010",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Style",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": ".00000",
+                    "name": "Size",
+                    "uniqueID": "7000000000000000037",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsSize",
+                    "facetable": true,
+                    "searchable": true
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": "1.00000",
+                            "value": "Wool",
+                            "uniqueID": "7000000000000000683",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "MCL009_0914"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Material",
+                    "uniqueID": "7000000000000000009",
+                    "usage": "Descriptive",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "Material",
+                    "facetable": false,
+                    "searchable": false
+                },
+                {
+                    "storeDisplay": false,
+                    "values": [
+                        {
+                            "sequence": ".00000",
+                            "value": "0",
+                            "uniqueID": "0",
+                            "unitID": "",
+                            "unitOfMeasure": "",
+                            "identifier": "0"
+                        }
+                    ],
+                    "sequence": "1.00000",
+                    "name": "Color",
+                    "uniqueID": "7000000000000000036",
+                    "usage": "Defining",
+                    "comparable": true,
+                    "displayable": true,
+                    "identifier": "MenJacketsColor",
+                    "facetable": true,
+                    "searchable": true
+                }
+            ],
+            "storeID": "10051",
+            "partNumber": "MCL009_0914"
+        }
+    ],
+    "recordSetComplete": "true",
+    "recordSetStartNumber": "0",
+    "recordSetTotalMatches": 15,
+    "metaData": {
+        "price": "1"
+    },
+    "resourceName": "productview"
+}
